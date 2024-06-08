@@ -1,0 +1,1 @@
+import{_ as e,c as i,o as l,a3 as t}from"./chunks/framework.asm4Y-uW.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"ds/线性表.md","filePath":"ds/线性表.md"}'),a={name:"ds/线性表.md"},o=t("",10),c=[o];function d(s,r,n,_,p,L){return l(),i("div",null,c)}const u=e(a,[["render",d]]);export{m as __pageData,u as default};
