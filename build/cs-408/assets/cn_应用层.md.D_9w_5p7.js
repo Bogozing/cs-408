@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.D61v7-2O.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"cn/应用层.md","filePath":"cn/应用层.md"}'),n={name:"cn/应用层.md"};function c(o,r,s,_,p,d){return a(),t("div")}const f=e(n,[["render",c]]);export{m as __pageData,f as default};

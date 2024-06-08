@@ -9,7 +9,7 @@ const BASE_PATH = '/cs-408';
 export default defineConfig({
 
   srcDir: './docs',
-  outDir: `./build${BASE_PATH}`,
+  outDir: `.vitepress/dist`,
   assetsDir: 'assets',
   base: '/cs-408/',
 
