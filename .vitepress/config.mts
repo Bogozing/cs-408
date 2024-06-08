@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 import { sidebar } from './config/links.mts';
 import { customElements } from "./config/mathjax3.mts";
 
-const BASE_PATH = '/';
+const BASE_PATH = '/cs-408';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
