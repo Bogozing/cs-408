@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | 408</title>
+    <meta name="description" content="计算机考研408">
+    <meta name="generator" content="VitePress v1.1.3">
+    <link rel="preload stylesheet" href="/cs-408/assets/style.B6YM8vTJ.css" as="style">
+    
+    <script type="module" src="/cs-408/assets/app.EFwHolmQ.js"></script>
+    <link rel="preload" href="/cs-408/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/cs-408/assets/chunks/framework.D61v7-2O.js">
+    <link rel="modulepreload" href="/cs-408/assets/chunks/theme.CVYxa-TA.js">
+    <link rel="modulepreload" href="/cs-408/assets/api-examples.md.4KYEJ7ny.lean.js">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-5d98c3a5><!--[--><!--]--><!--[--><span tabindex="-1" data-v-0f60ec36></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-0f60ec36> Skip to content </a><!--]--><!----><header class="VPNav" data-v-5d98c3a5 data-v-ae24b3ad><div class="VPNavBar top" data-v-ae24b3ad data-v-ccf7ddec><div class="wrapper" data-v-ccf7ddec><div class="container" data-v-ccf7ddec><div class="title" data-v-ccf7ddec><div class="VPNavBarTitle" data-v-ccf7ddec data-v-ab179fa1><a class="title" href="/cs-408/" data-v-ab179fa1><!--[--><!--]--><!----><span data-v-ab179fa1>408</span><!--[--><!--]--></a></div></div><div class="content" data-v-ccf7ddec><div class="content-body" data-v-ccf7ddec><!--[--><!--]--><div class="VPNavBarSearch search" data-v-ccf7ddec><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-ccf7ddec data-v-7f418b0f><span id="main-nav-aria-label" class="visually-hidden" data-v-7f418b0f>Main Navigation</span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/cs-408/" tabindex="0" data-v-7f418b0f data-v-9c663999><!--[--><span data-v-9c663999>Home</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/cs-408/markdown-examples.html" tabindex="0" data-v-7f418b0f data-v-9c663999><!--[--><span data-v-9c663999>案例</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/cs-408/ds/" tabindex="0" data-v-7f418b0f data-v-9c663999><!--[--><span data-v-9c663999>数据结构</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/cs-408/cs/" tabindex="0" data-v-7f418b0f data-v-9c663999><!--[--><span data-v-9c663999>计算机组成原理</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/cs-408/os/" tabindex="0" data-v-7f418b0f data-v-9c663999><!--[--><span data-v-9c663999>操作系统</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/cs-408/cn/" tabindex="0" data-v-7f418b0f data-v-9c663999><!--[--><span data-v-9c663999>计算机网络</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-ccf7ddec data-v-e6aabb21><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-e6aabb21 data-v-d1f28634 data-v-1d5665e3><span class="check" data-v-1d5665e3><span class="icon" data-v-1d5665e3><!--[--><span class="vpi-sun sun" data-v-d1f28634></span><span class="vpi-moon moon" data-v-d1f28634></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-ccf7ddec data-v-0394ad82 data-v-7bc22406><!--[--><a class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress" aria-label="github" target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><span class="vpi-social-github" /></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-ccf7ddec data-v-d0bd9dde data-v-b6c34ac9><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-b6c34ac9><span class="vpi-more-horizontal icon" data-v-b6c34ac9></span></button><div class="menu" data-v-b6c34ac9><div class="VPMenu" data-v-b6c34ac9 data-v-e7ea1737><!----><!--[--><!--[--><!----><div class="group" data-v-d0bd9dde><div class="item appearance" data-v-d0bd9dde><p class="label" data-v-d0bd9dde>Appearance</p><div class="appearance-action" data-v-d0bd9dde><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-d0bd9dde data-v-d1f28634 data-v-1d5665e3><span class="check" data-v-1d5665e3><span class="icon" data-v-1d5665e3><!--[--><span class="vpi-sun sun" data-v-d1f28634></span><span class="vpi-moon moon" data-v-d1f28634></span><!--]--></span></span></button></div></div></div><div class="group" data-v-d0bd9dde><div class="item social-links" data-v-d0bd9dde><div class="VPSocialLinks social-links-list" data-v-d0bd9dde data-v-7bc22406><!--[--><a class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress" aria-label="github" target="_blank" rel="noopener" data-v-7bc22406 data-v-eee4e7cb><span class="vpi-social-github" /></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-ccf7ddec data-v-e5dd9c1c><span class="container" data-v-e5dd9c1c><span class="top" data-v-e5dd9c1c></span><span class="middle" data-v-e5dd9c1c></span><span class="bottom" data-v-e5dd9c1c></span></span></button></div></div></div></div><div class="divider" data-v-ccf7ddec><div class="divider-line" data-v-ccf7ddec></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-5d98c3a5 data-v-a6f0e41e><div class="container" data-v-a6f0e41e><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-a6f0e41e data-v-267dd0ed><button data-v-267dd0ed>Return to top</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-5d98c3a5 data-v-1428d186><div class="VPDoc has-aside" data-v-1428d186 data-v-39a288b8><!--[--><!--]--><div class="container" data-v-39a288b8><div class="aside" data-v-39a288b8><div class="aside-curtain" data-v-39a288b8></div><div class="aside-container" data-v-39a288b8><div class="aside-content" data-v-39a288b8><div class="VPDocAside" data-v-39a288b8 data-v-3f215769><!--[--><!--]--><!--[--><!--]--><div class="VPDocAsideOutline" role="navigation" data-v-3f215769 data-v-935f8a84><div class="content" data-v-935f8a84><div class="outline-marker" data-v-935f8a84></div><div class="outline-title" role="heading" aria-level="2" data-v-935f8a84>On this page</div><nav aria-labelledby="doc-outline-aria-label" data-v-935f8a84><span class="visually-hidden" id="doc-outline-aria-label" data-v-935f8a84> Table of Contents for current page </span><ul class="VPDocOutlineItem root" data-v-935f8a84 data-v-b933a997><!--[--><!--]--></ul></nav></div></div><!--[--><!--]--><div class="spacer" data-v-3f215769></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-39a288b8><div class="content-container" data-v-39a288b8><!--[--><!--]--><main class="main" data-v-39a288b8><div style="position:relative;" class="vp-doc _cs-408_api-examples" data-v-39a288b8><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> setup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useData } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">theme</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">page</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">frontmatter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useData</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;--shiki-light-font-weight:bold;--shiki-dark-font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;--shiki-light-font-weight:bold;--shiki-dark-font-weight:bold;">### Theme Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ theme }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">### Page Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ page }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">### Page Frontmatter</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ frontmatter }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span></code></pre></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;Home&quot;,
+      &quot;link&quot;: &quot;/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;案例&quot;,
+      &quot;link&quot;: &quot;/markdown-examples&quot;
+    },
+    {
+      &quot;text&quot;: &quot;数据结构&quot;,
+      &quot;link&quot;: &quot;/ds/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;计算机组成原理&quot;,
+      &quot;link&quot;: &quot;/cs/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;操作系统&quot;,
+      &quot;link&quot;: &quot;/os/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;计算机网络&quot;,
+      &quot;link&quot;: &quot;/cn/&quot;
+    }
+  ],
+  &quot;sidebar&quot;: {
+    &quot;/markdown-examples&quot;: [
+      {
+        &quot;text&quot;: &quot;Examples&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;Markdown Examples&quot;,
+            &quot;link&quot;: &quot;/markdown-examples&quot;
+          },
+          {
+            &quot;text&quot;: &quot;Runtime API Examples&quot;,
+            &quot;link&quot;: &quot;/api-examples&quot;
+          }
+        ]
+      }
+    ],
+    &quot;/ds/&quot;: [
+      {
+        &quot;text&quot;: &quot;数据结构&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;0.index&quot;,
+            &quot;link&quot;: &quot;/ds/index.html&quot;
+          },
+          {
+            &quot;text&quot;: &quot;1.绪论&quot;,
+            &quot;link&quot;: &quot;/ds/绪论&quot;
+          },
+          {
+            &quot;text&quot;: &quot;2.线性表&quot;,
+            &quot;link&quot;: &quot;/ds/线性表&quot;
+          },
+          {
+            &quot;text&quot;: &quot;3.栈和队列&quot;,
+            &quot;link&quot;: &quot;/ds/栈和队列&quot;
+          },
+          {
+            &quot;text&quot;: &quot;4.串&quot;,
+            &quot;link&quot;: &quot;/ds/串&quot;
+          },
+          {
+            &quot;text&quot;: &quot;5.树与二叉树&quot;,
+            &quot;link&quot;: &quot;/ds/树与二叉树&quot;
+          },
+          {
+            &quot;text&quot;: &quot;6.图&quot;,
+            &quot;link&quot;: &quot;/ds/图&quot;
+          },
+          {
+            &quot;text&quot;: &quot;7.查找&quot;,
+            &quot;link&quot;: &quot;/ds/查找&quot;
+          },
+          {
+            &quot;text&quot;: &quot;8.排序&quot;,
+            &quot;link&quot;: &quot;/ds/排序&quot;
+          }
+        ]
+      }
+    ],
+    &quot;/cs/&quot;: [
+      {
+        &quot;text&quot;: &quot;计算机组成原理&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;0.index&quot;,
+            &quot;link&quot;: &quot;/cs/index.html&quot;
+          },
+          {
+            &quot;text&quot;: &quot;1.计算机系统概述&quot;,
+            &quot;link&quot;: &quot;/cs/计算机系统概述&quot;
+          },
+          {
+            &quot;text&quot;: &quot;2.数据的表示和运算&quot;,
+            &quot;link&quot;: &quot;/cs/数据的表示和运算&quot;
+          },
+          {
+            &quot;text&quot;: &quot;3.存储系统&quot;,
+            &quot;link&quot;: &quot;/cs/存储系统&quot;
+          },
+          {
+            &quot;text&quot;: &quot;4.指令系统&quot;,
+            &quot;link&quot;: &quot;/cs/指令系统&quot;
+          },
+          {
+            &quot;text&quot;: &quot;5.中央处理器&quot;,
+            &quot;link&quot;: &quot;/cs/中央处理器&quot;
+          },
+          {
+            &quot;text&quot;: &quot;6.总线&quot;,
+            &quot;link&quot;: &quot;/cs/总线&quot;
+          },
+          {
+            &quot;text&quot;: &quot;7.输入输出系统&quot;,
+            &quot;link&quot;: &quot;/cs/输入输出系统&quot;
+          }
+        ]
+      }
+    ],
+    &quot;/os/&quot;: [
+      {
+        &quot;text&quot;: &quot;操作系统&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;0.index&quot;,
+            &quot;link&quot;: &quot;/os/index.html&quot;
+          },
+          {
+            &quot;text&quot;: &quot;1.计算机系统概述&quot;,
+            &quot;link&quot;: &quot;/os/计算机系统概述&quot;
+          },
+          {
+            &quot;text&quot;: &quot;2.进程管理&quot;,
+            &quot;link&quot;: &quot;/os/进程管理&quot;
+          },
+          {
+            &quot;text&quot;: &quot;3.内存管理&quot;,
+            &quot;link&quot;: &quot;/os/内存管理&quot;
+          },
+          {
+            &quot;text&quot;: &quot;4.文件管理&quot;,
+            &quot;link&quot;: &quot;/os/文件管理&quot;
+          },
+          {
+            &quot;text&quot;: &quot;5.输入输出管理&quot;,
+            &quot;link&quot;: &quot;/os/输入输出管理&quot;
+          }
+        ]
+      }
+    ],
+    &quot;/cn/&quot;: [
+      {
+        &quot;text&quot;: &quot;计算机网络&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;0.index&quot;,
+            &quot;link&quot;: &quot;/cn/index.html&quot;
+          },
+          {
+            &quot;text&quot;: &quot;1.计算机网络概述&quot;,
+            &quot;link&quot;: &quot;/cn/计算机网络概述&quot;
+          },
+          {
+            &quot;text&quot;: &quot;2.物理层&quot;,
+            &quot;link&quot;: &quot;/cn/物理层&quot;
+          },
+          {
+            &quot;text&quot;: &quot;3.数据链路层&quot;,
+            &quot;link&quot;: &quot;/cn/数据链路层&quot;
+          },
+          {
+            &quot;text&quot;: &quot;4.网络层&quot;,
+            &quot;link&quot;: &quot;/cn/网络层&quot;
+          },
+          {
+            &quot;text&quot;: &quot;5.传输层&quot;,
+            &quot;link&quot;: &quot;/cn/传输层&quot;
+          },
+          {
+            &quot;text&quot;: &quot;6.应用层&quot;,
+            &quot;link&quot;: &quot;/cn/应用层&quot;
+          }
+        ]
+      }
+    ]
+  },
+  &quot;socialLinks&quot;: [
+    {
+      &quot;icon&quot;: &quot;github&quot;,
+      &quot;link&quot;: &quot;https://github.com/vuejs/vitepress&quot;
+    }
+  ],
+  &quot;footer&quot;: {
+    &quot;copyright&quot;: &quot;Copyright@2024 Bogo Zhang&quot;
+  }
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;api-examples.md&quot;
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-39a288b8 data-v-09de1c0f><!--[--><!--]--><!----><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-5d98c3a5 data-v-e315a0ad><div class="container" data-v-e315a0ad><!----><p class="copyright" data-v-e315a0ad>Copyright@2024 Bogo Zhang</p></div></footer><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"ds_串.md\":\"DNwlBBuh\",\"os_输入输出管理.md\":\"C0ilapYc\",\"cn_index.md\":\"CF7j0mLU\",\"cn_网络层.md\":\"BxepwrY_\",\"cs_存储系统.md\":\"DkFjkQEF\",\"cn_传输层.md\":\"bIABAqNV\",\"cs_数据的表示和运算.md\":\"CRE9xXIu\",\"ds_查找.md\":\"CR9fgPfI\",\"markdown-examples.md\":\"Ds_Q7_BU\",\"cn_数据链路层.md\":\"BbqtoS7z\",\"cs_计算机系统概述.md\":\"wtv4uDYy\",\"os_内存管理.md\":\"CeUQsg_E\",\"ds_线性表.md\":\"lMSWmXLZ\",\"index.md\":\"D8QPZV43\",\"cs_指令系统.md\":\"nD6wtOrD\",\"cs_总线.md\":\"DoXvrcLz\",\"ds_排序.md\":\"Cjho5xh3\",\"os_index.md\":\"CS3M7ob1\",\"cs_index.md\":\"DNvg4Bx_\",\"ds_图.md\":\"CiIlHQPz\",\"os_进程管理.md\":\"BGSyMfAg\",\"cs_输入输出系统.md\":\"C0ScHRoV\",\"cn_应用层.md\":\"D_9w_5p7\",\"ds_树与二叉树.md\":\"eVOXZgH8\",\"api-examples.md\":\"4KYEJ7ny\",\"os_计算机系统概述.md\":\"BIuG_fkW\",\"ds_栈和队列.md\":\"BzpEuIGk\",\"os_文件管理.md\":\"BMDamrPN\",\"cn_物理层.md\":\"DchY2Dfd\",\"ds_index.md\":\"DTHxwPK7\",\"cs_中央处理器.md\":\"C--p60Cy\",\"cn_计算机网络概述.md\":\"DYu4ZRpL\",\"ds_绪论.md\":\"Cwt2Um2r\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"408\",\"description\":\"计算机考研408\",\"base\":\"/cs-408/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"nav\":[{\"text\":\"Home\",\"link\":\"/\"},{\"text\":\"案例\",\"link\":\"/markdown-examples\"},{\"text\":\"数据结构\",\"link\":\"/ds/\"},{\"text\":\"计算机组成原理\",\"link\":\"/cs/\"},{\"text\":\"操作系统\",\"link\":\"/os/\"},{\"text\":\"计算机网络\",\"link\":\"/cn/\"}],\"sidebar\":{\"/markdown-examples\":[{\"text\":\"Examples\",\"items\":[{\"text\":\"Markdown Examples\",\"link\":\"/markdown-examples\"},{\"text\":\"Runtime API Examples\",\"link\":\"/api-examples\"}]}],\"/ds/\":[{\"text\":\"数据结构\",\"items\":[{\"text\":\"0.index\",\"link\":\"/ds/index.html\"},{\"text\":\"1.绪论\",\"link\":\"/ds/绪论\"},{\"text\":\"2.线性表\",\"link\":\"/ds/线性表\"},{\"text\":\"3.栈和队列\",\"link\":\"/ds/栈和队列\"},{\"text\":\"4.串\",\"link\":\"/ds/串\"},{\"text\":\"5.树与二叉树\",\"link\":\"/ds/树与二叉树\"},{\"text\":\"6.图\",\"link\":\"/ds/图\"},{\"text\":\"7.查找\",\"link\":\"/ds/查找\"},{\"text\":\"8.排序\",\"link\":\"/ds/排序\"}]}],\"/cs/\":[{\"text\":\"计算机组成原理\",\"items\":[{\"text\":\"0.index\",\"link\":\"/cs/index.html\"},{\"text\":\"1.计算机系统概述\",\"link\":\"/cs/计算机系统概述\"},{\"text\":\"2.数据的表示和运算\",\"link\":\"/cs/数据的表示和运算\"},{\"text\":\"3.存储系统\",\"link\":\"/cs/存储系统\"},{\"text\":\"4.指令系统\",\"link\":\"/cs/指令系统\"},{\"text\":\"5.中央处理器\",\"link\":\"/cs/中央处理器\"},{\"text\":\"6.总线\",\"link\":\"/cs/总线\"},{\"text\":\"7.输入输出系统\",\"link\":\"/cs/输入输出系统\"}]}],\"/os/\":[{\"text\":\"操作系统\",\"items\":[{\"text\":\"0.index\",\"link\":\"/os/index.html\"},{\"text\":\"1.计算机系统概述\",\"link\":\"/os/计算机系统概述\"},{\"text\":\"2.进程管理\",\"link\":\"/os/进程管理\"},{\"text\":\"3.内存管理\",\"link\":\"/os/内存管理\"},{\"text\":\"4.文件管理\",\"link\":\"/os/文件管理\"},{\"text\":\"5.输入输出管理\",\"link\":\"/os/输入输出管理\"}]}],\"/cn/\":[{\"text\":\"计算机网络\",\"items\":[{\"text\":\"0.index\",\"link\":\"/cn/index.html\"},{\"text\":\"1.计算机网络概述\",\"link\":\"/cn/计算机网络概述\"},{\"text\":\"2.物理层\",\"link\":\"/cn/物理层\"},{\"text\":\"3.数据链路层\",\"link\":\"/cn/数据链路层\"},{\"text\":\"4.网络层\",\"link\":\"/cn/网络层\"},{\"text\":\"5.传输层\",\"link\":\"/cn/传输层\"},{\"text\":\"6.应用层\",\"link\":\"/cn/应用层\"}]}]},\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/vuejs/vitepress\"}],\"footer\":{\"copyright\":\"Copyright@2024 Bogo Zhang\"}},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
