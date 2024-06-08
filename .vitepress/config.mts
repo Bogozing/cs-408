@@ -11,7 +11,7 @@ export default defineConfig({
   srcDir: './docs',
   outDir: `./build${BASE_PATH}`,
   assetsDir: 'assets',
-  base: BASE_PATH,
+  base: '/cs-408/',
 
   title: "408",
   description: "计算机考研408",
