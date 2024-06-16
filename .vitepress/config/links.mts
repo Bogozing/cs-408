@@ -1,3 +1,12 @@
+export const nav = [
+  { text: 'Home', link: '/' },
+  { text: '案例', link: '/markdown-examples'},
+  { text: '数据结构', link: '/ds/'},
+  { text: '计算机组成原理', link: '/co/'},
+  { text: '操作系统', link: '/os/'},
+  { text: '计算机网络', link: '/cn/' }
+]
+
 export const sidebar = {
   '/markdown-examples': [
     {
@@ -24,18 +33,18 @@ export const sidebar = {
       ]
     }
 ],
-  '/cs/': [
+  '/co/': [
     {
       text: "计算机组成原理",
       items: [
-        {text:'0.index',link:"/cs/index.html"},
-        {text:'1.计算机系统概述',link:"/cs/计算机系统概述"},
-        {text:'2.数据的表示和运算',link:"/cs/数据的表示和运算"},
-        {text:'3.存储系统',link:"/cs/存储系统"},
-        {text:'4.指令系统',link:"/cs/指令系统"},
-        {text:'5.中央处理器',link:"/cs/中央处理器"},
-        {text:'6.总线',link:"/cs/总线"},
-        {text:'7.输入输出系统',link:"/cs/输入输出系统"}
+        {text:'0.index',link:"/co/index.html"},
+        {text:'1.计算机系统概述',link:"/co/计算机系统概述"},
+        {text:'2.数据的表示和运算',link:"/co/数据的表示和运算"},
+        {text:'3.存储系统',link:"/co/存储系统"},
+        {text:'4.指令系统',link:"/co/指令系统"},
+        {text:'5.中央处理器',link:"/co/中央处理器"},
+        {text:'6.总线',link:"/co/总线"},
+        {text:'7.输入输出系统',link:"/co/输入输出系统"}
       ]
     }
 ],

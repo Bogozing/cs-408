@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a3 as r}from"./chunks/framework.D61v7-2O.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"co/中央处理器.md","filePath":"co/中央处理器.md"}'),n={name:"co/中央处理器.md"},l=r("",7),d=[l];function o(c,i,s,h,_,u){return a(),e("div",null,d)}const b=t(n,[["render",o]]);export{p as __pageData,b as default};

@@ -1,6 +1,6 @@
 import mathjax3 from "markdown-it-mathjax3";
 import { defineConfig } from 'vitepress';
-import { sidebar } from './config/links.mts';
+import { nav, sidebar } from './config/links.mts';
 import { customElements } from "./config/mathjax3.mts";
 
 const BASE_PATH = '/cs-408';
@@ -12,6 +12,7 @@ export default defineConfig({
   outDir: `.vitepress/dist`,
   assetsDir: 'assets',
   base: '/cs-408/',
+  
 
   title: "408",
   description: "计算机考研408",
@@ -19,21 +20,23 @@ export default defineConfig({
   // Theme
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: '案例', link: '/markdown-examples'},
-      { text: '数据结构', link: '/ds/'},
-      { text: '计算机组成原理', link: '/cs/'},
-      { text: '操作系统', link: '/os/'},
-      { text: '计算机网络', link: '/cn/' }
-    ],
+    nav: nav,
 
     sidebar: sidebar,
     
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
-
+    // 锚点导航
+    outline: {
+      level: [2, 4],
+      label: '章节目录'
+    },
+    docFooter: {
+      "prev": "前一篇",
+      "next": "后一篇"
+    },
+    // 页脚
     footer: {
       copyright: "Copyright@2024 Bogo Zhang"
     }

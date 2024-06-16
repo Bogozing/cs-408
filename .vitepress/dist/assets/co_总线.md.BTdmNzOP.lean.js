@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./chunks/framework.D61v7-2O.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"co/总线.md","filePath":"co/总线.md"}'),a={name:"co/总线.md"};function c(r,n,s,_,p,d){return o(),t("div")}const f=e(a,[["render",c]]);export{m as __pageData,f as default};
